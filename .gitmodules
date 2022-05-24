@@ -1,0 +1,8 @@
+[submodule "storage"]
+	path = storage
+	url = https://github.com/OCA/storage.git
+	branch = 13.0
+[submodule "web"]
+	path = web
+	url = https://github.com/OCA/web.git
+	branch = 13.0
