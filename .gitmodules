@@ -21,3 +21,7 @@
 	path = l10n-spain
 	url = https://github.com/OCA/l10n-spain.git
 	branch = 15.0
+[submodule "server-tools"]
+	path = server-tools
+	url = https://github.com/OCA/server-tools.git
+	branch = 15.0
