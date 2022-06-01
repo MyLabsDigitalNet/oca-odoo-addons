@@ -1,3 +1,27 @@
 [submodule "web"]
 	path = web
 	url = https://github.com/OCA/web.git
+[submodule "storage"]
+	path = storage
+	url = https://github.com/OCA/storage.git
+	branch = 15.0
+[submodule "partner-contact"]
+	path = partner-contact
+	url = https://github.com/OCA/partner-contact.git
+	branch = 15.0
+[submodule "server-ux"]
+	path = server-ux
+	url = https://github.com/OCA/server-ux.git
+	branch = 15.0
+[submodule "account-financial-reporting"]
+	path = account-financial-reporting
+	url = https://github.com/OCA/account-financial-reporting.git
+	branch = 15.0
+[submodule "l10n-spain"]
+	path = l10n-spain
+	url = https://github.com/OCA/l10n-spain.git
+	branch = 15.0
+[submodule "server-tools"]
+	path = server-tools
+	url = https://github.com/OCA/server-tools.git
+	branch = 15.0
