@@ -29,3 +29,14 @@
 	path = community-data-files
 	url = https://github.com/OCA/community-data-files.git
 	branch = 15.0
+[submodule "connector"]
+	path = connector
+	url = https://github.com/OCA/connector.git
+	branch = 15.0
+[submodule "connector-interfaces"]
+	path = connector-interfaces
+	url = https://github.com/OCA/connector-interfaces.git
+	branch = 15.0
+[submodule "queue"]
+	path = queue
+	url = https://github.com/OCA/queue.git
