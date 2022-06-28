@@ -40,3 +40,11 @@
 [submodule "queue"]
 	path = queue
 	url = https://github.com/OCA/queue.git
+[submodule "hr"]
+	path = hr
+	url = https://github.com/OCA/hr.git
+	branch = 15.0
+[submodule "sale-workflow"]
+	path = sale-workflow
+	url = https://github.com/OCA/sale-workflow.git
+	branch = 15.0
