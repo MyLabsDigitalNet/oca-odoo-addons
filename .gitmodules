@@ -23,7 +23,7 @@
 	branch = 15.0
 [submodule "server-tools"]
 	path = server-tools
-	url = https://github.com/OCA/server-tools.git
+	url = git@github.com:Qsimov/server-tools.git
 	branch = 15.0
 [submodule "community-data-files"]
 	path = community-data-files
@@ -47,4 +47,20 @@
 [submodule "sale-workflow"]
 	path = sale-workflow
 	url = https://github.com/OCA/sale-workflow.git
+	branch = 15.0
+[submodule "account-closing"]
+	path = account-closing
+	url = https://github.com/OCA/account-closing.git
+	branch = 15.0
+[submodule "account-analytic"]
+	path = account-analytic
+	url = https://github.com/OCA/account-analytic.git
+	branch = 15.0
+[submodule "bank-payment"]
+	path = bank-payment
+	url = https://github.com/OCA/bank-payment.git
+	branch = 15.0
+[submodule "product-attribute"]
+	path = product-attribute
+	url = git@github.com:Qsimov/product-attribute.git
 	branch = 15.0
