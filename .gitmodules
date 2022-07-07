@@ -64,3 +64,15 @@
 	path = product-attribute
 	url = git@github.com:Qsimov/product-attribute.git
 	branch = 15.0
+[submodule "server-backend"]
+	path = server-backend
+	url = git@github.com:Qsimov/server-backend.git
+	branch = 15.0
+[submodule "manufacture"]
+	path = manufacture
+	url = git@github.com:Qsimov/manufacture.git
+	branch = 15.0
+[submodule "maintenance"]
+	path = maintenance
+	url = git@github.com:Qsimov/maintenance.git
+	branch = 15.0
