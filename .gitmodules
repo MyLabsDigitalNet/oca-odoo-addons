@@ -76,3 +76,7 @@
 	path = maintenance
 	url = git@github.com:Qsimov/maintenance.git
 	branch = 15.0
+[submodule "vertical-rental"]
+	path = vertical-rental
+	url = git@github.com:Qsimov/vertical-rental.git
+	branch = 15.0
