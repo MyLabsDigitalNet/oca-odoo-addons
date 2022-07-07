@@ -1,6 +1,7 @@
 [submodule "web"]
 	path = web
 	url = https://github.com/OCA/web.git
+	branch = 15.0
 [submodule "storage"]
 	path = storage
 	url = https://github.com/OCA/storage.git
@@ -23,7 +24,7 @@
 	branch = 15.0
 [submodule "server-tools"]
 	path = server-tools
-	url = git@github.com:Qsimov/server-tools.git
+	url = https://github.com/Qsimov/server-tools.git
 	branch = 15.0
 [submodule "community-data-files"]
 	path = community-data-files
@@ -40,6 +41,7 @@
 [submodule "queue"]
 	path = queue
 	url = https://github.com/OCA/queue.git
+	branch = 15.0
 [submodule "hr"]
 	path = hr
 	url = https://github.com/OCA/hr.git
