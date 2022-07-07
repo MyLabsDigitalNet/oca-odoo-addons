@@ -62,21 +62,21 @@
 	branch = 15.0
 [submodule "product-attribute"]
 	path = product-attribute
-	url = git@github.com:Qsimov/product-attribute.git
+	url = https://github.com/Qsimov/product-attribute.git
 	branch = 15.0
 [submodule "server-backend"]
 	path = server-backend
-	url = git@github.com:Qsimov/server-backend.git
+	url = https://github.com/Qsimov/server-backend.git
 	branch = 15.0
 [submodule "manufacture"]
 	path = manufacture
-	url = git@github.com:Qsimov/manufacture.git
+	url = https://github.com/Qsimov/manufacture.git
 	branch = 15.0
 [submodule "maintenance"]
 	path = maintenance
-	url = git@github.com:Qsimov/maintenance.git
+	url = https://github.com/Qsimov/maintenance.git
 	branch = 15.0
 [submodule "vertical-rental"]
 	path = vertical-rental
-	url = git@github.com:Qsimov/vertical-rental.git
+	url = https://github.com/Qsimov/vertical-rental.git
 	branch = 15.0
