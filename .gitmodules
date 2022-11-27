@@ -98,3 +98,7 @@
 	path = server-env
 	url = https://github.com/OCA/server-env.git
 	branch = 15.0
+[submodule "odoo-cloud-platform"]
+	path = odoo-cloud-platform
+	url = https://github.com/camptocamp/odoo-cloud-platform.git
+	branch = 15.0
