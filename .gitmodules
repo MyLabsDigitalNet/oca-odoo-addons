@@ -102,3 +102,15 @@
 	path = odoo-cloud-platform
 	url = https://github.com/camptocamp/odoo-cloud-platform.git
 	branch = 15.0
+[submodule "dms"]
+	path = dms
+	url = https://github.com/OCA/dms.git
+	branch = 15.0
+[submodule "social"]
+	path = social
+	url = https://github.com/OCA/social.git
+	branch = 15.0
+[submodule "project"]
+	path = project
+	url = https://github.com/OCA/project.git
+	branch = 15.0
