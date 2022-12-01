@@ -118,3 +118,7 @@
 	path = server-auth
 	url = https://github.com/OCA/server-auth.git
 	branch = 15.0
+[submodule "server-brand"]
+	path = server-brand
+	url = https://github.com/OCA/server-brand.git
+	branch = 15.0
