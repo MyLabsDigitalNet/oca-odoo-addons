@@ -122,3 +122,43 @@
 	path = server-brand
 	url = https://github.com/OCA/server-brand.git
 	branch = 15.0
+[submodule "multi-company"]
+	path = multi-company
+	url = https://github.com/OCA/multi-company.git
+	branch = 15.0
+[submodule "edi"]
+	path = edi
+	url = https://github.com/OCA/edi.git
+	branch = 15.0
+[submodule "payroll"]
+	path = payroll
+	url = https://github.com/OCA/payroll.git
+	branch = 15.0
+[submodule "account-financial-tools"]
+	path = account-financial-tools
+	url = https://github.com/OCA/account-financial-tools.git
+	branch = 15.0
+[submodule "bank-statement-import"]
+	path = bank-statement-import
+	url = https://github.com/OCA/bank-statement-import.git
+	branch = 15.0
+[submodule "account-fiscal-rule"]
+	path = account-fiscal-rule
+	url = https://github.com/OCA/account-fiscal-rule.git
+	branch = 15.0
+[submodule "account-invoicing"]
+	path = account-invoicing
+	url = https://github.com/OCA/account-invoicing.git
+	branch = 15.0
+[submodule "web-api"]
+	path = web-api
+	url = https://github.com/OCA/web-api.git
+	branch = 15.0
+[submodule "intrastat-extrastat"]
+	path = intrastat-extrastat
+	url = https://github.com/OCA/intrastat-extrastat.git
+	branch = 15.0
+[submodule "mis-builder"]
+	path = mis-builder
+	url = https://github.com/OCA/mis-builder.git
+	branch = 15.0
