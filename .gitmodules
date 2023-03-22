@@ -70,10 +70,6 @@
 	path = manufacture
 	url = https://github.com/OCA/manufacture.git
 	branch = 15.0
-[submodule "maintenance"]
-	path = maintenance
-	url = https://github.com/OCA/maintenance.git
-	branch = 15.0
 [submodule "vertical-rental"]
 	path = vertical-rental
 	url = https://github.com/OCA/vertical-rental.git
@@ -161,4 +157,8 @@
 [submodule "server-backend"]
 	path = server-backend
 	url = https://github.com/OCA/server-backend.git
+	branch = 15.0
+[submodule "maintenance"]
+	path = maintenance
+	url = https://github.com/OCA/maintenance.git
 	branch = 15.0
