@@ -66,10 +66,6 @@
 	path = product-attribute
 	url = https://github.com/OCA/product-attribute.git
 	branch = 15.0
-[submodule "server-backend"]
-	path = server-backend
-	url = https://github.com/OCA/server-backend.git
-	branch = 15.0
 [submodule "manufacture"]
 	path = manufacture
 	url = https://github.com/OCA/manufacture.git
@@ -161,4 +157,8 @@
 [submodule "mis-builder"]
 	path = mis-builder
 	url = https://github.com/OCA/mis-builder.git
+	branch = 15.0
+[submodule "server-backend"]
+	path = server-backend
+	url = https://github.com/OCA/server-backend.git
 	branch = 15.0
