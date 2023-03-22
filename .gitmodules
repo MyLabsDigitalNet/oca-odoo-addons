@@ -162,3 +162,7 @@
 	path = maintenance
 	url = https://github.com/OCA/maintenance.git
 	branch = 15.0
+[submodule "stock-logistics-workflow"]
+	path = stock-logistics-workflow
+	url = https://github.com/OCA/stock-logistics-workflow.git
+	branch = 15.0
