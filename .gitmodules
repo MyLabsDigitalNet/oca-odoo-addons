@@ -170,3 +170,11 @@
 	path = contract
 	url = https://github.com/OCA/contract.git
 	branch = 15.0
+[submodule "knowledge"]
+	path = knowledge
+	url = https://github.com/OCA/knowledge.git
+	branch = 15.0
+[submodule "event"]
+	path = event
+	url = https://github.com/OCA/event.git
+	branch = 15.0
