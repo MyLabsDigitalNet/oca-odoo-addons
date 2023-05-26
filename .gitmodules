@@ -178,3 +178,23 @@
 	path = event
 	url = https://github.com/OCA/event.git
 	branch = 15.0
+[submodule "account-payment"]
+	path = account-payment
+	url = https://github.com/OCA/account-payment.git
+	branch = 15.0
+[submodule "odoo-formio"]
+	path = odoo-formio
+	url = https://github.com/novacode-nl/odoo-formio.git
+	branch = 15.0
+[submodule "commission"]
+	path = commission
+	url = https://github.com/OCA/commission.git
+	branch = 15.0
+[submodule "product-pack"]
+	path = product-pack
+	url = https://github.com/OCA/product-pack.git
+	branch = 15.0
+[submodule "product-variant"]
+	path = product-variant
+	url = https://github.com/OCA/product-variant.git
+	branch = 15.0
