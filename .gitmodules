@@ -1,200 +1,208 @@
 [submodule "web"]
 	path = web
 	url = https://github.com/OCA/web.git
-	branch = 15.0
+	branch = 16.0
 [submodule "storage"]
 	path = storage
 	url = https://github.com/OCA/storage.git
-	branch = 15.0
+	branch = 16.0
 [submodule "partner-contact"]
 	path = partner-contact
 	url = https://github.com/OCA/partner-contact.git
-	branch = 15.0
+	branch = 16.0
 [submodule "server-ux"]
 	path = server-ux
 	url = https://github.com/OCA/server-ux.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-financial-reporting"]
 	path = account-financial-reporting
 	url = https://github.com/OCA/account-financial-reporting.git
-	branch = 15.0
+	branch = 16.0
 [submodule "l10n-spain"]
 	path = l10n-spain
 	url = https://github.com/OCA/l10n-spain.git
-	branch = 15.0
+	branch = 16.0
 [submodule "server-tools"]
 	path = server-tools
 	url = https://github.com/OCA/server-tools.git
-	branch = 15.0
+	branch = 16.0
 [submodule "community-data-files"]
 	path = community-data-files
 	url = https://github.com/OCA/community-data-files.git
-	branch = 15.0
+	branch = 16.0
 [submodule "connector"]
 	path = connector
 	url = https://github.com/OCA/connector.git
-	branch = 15.0
+	branch = 16.0
 [submodule "connector-interfaces"]
 	path = connector-interfaces
 	url = https://github.com/OCA/connector-interfaces.git
-	branch = 15.0
+	branch = 16.0
 [submodule "queue"]
 	path = queue
 	url = https://github.com/OCA/queue.git
-	branch = 15.0
+	branch = 16.0
 [submodule "hr"]
 	path = hr
 	url = https://github.com/OCA/hr.git
-	branch = 15.0
+	branch = 16.0
 [submodule "sale-workflow"]
 	path = sale-workflow
 	url = https://github.com/OCA/sale-workflow.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-closing"]
 	path = account-closing
 	url = https://github.com/OCA/account-closing.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-analytic"]
 	path = account-analytic
 	url = https://github.com/OCA/account-analytic.git
-	branch = 15.0
+	branch = 16.0
 [submodule "bank-payment"]
 	path = bank-payment
 	url = https://github.com/OCA/bank-payment.git
-	branch = 15.0
+	branch = 16.0
 [submodule "product-attribute"]
 	path = product-attribute
 	url = https://github.com/OCA/product-attribute.git
-	branch = 15.0
+	branch = 16.0
 [submodule "manufacture"]
 	path = manufacture
 	url = https://github.com/OCA/manufacture.git
-	branch = 15.0
+	branch = 16.0
 [submodule "reporting-engine"]
 	path = reporting-engine
 	url = https://github.com/OCA/reporting-engine.git
-	branch = 15.0
+	branch = 16.0
 [submodule "purchase-workflow"]
 	path = purchase-workflow
 	url = https://github.com/OCA/purchase-workflow.git
-	branch = 15.0
+	branch = 16.0
 [submodule "helpdesk"]
 	path = helpdesk
 	url = https://github.com/OCA/helpdesk.git
-	branch = 15.0
+	branch = 16.0
 [submodule "server-env"]
 	path = server-env
 	url = https://github.com/OCA/server-env.git
-	branch = 15.0
+	branch = 16.0
 [submodule "odoo-cloud-platform"]
 	path = odoo-cloud-platform
 	url = https://github.com/camptocamp/odoo-cloud-platform.git
-	branch = 15.0
+	branch = 16.0
 [submodule "dms"]
 	path = dms
 	url = https://github.com/OCA/dms.git
-	branch = 15.0
+	branch = 16.0
 [submodule "social"]
 	path = social
 	url = https://github.com/OCA/social.git
-	branch = 15.0
+	branch = 16.0
 [submodule "project"]
 	path = project
 	url = https://github.com/OCA/project.git
-	branch = 15.0
+	branch = 16.0
 [submodule "server-auth"]
 	path = server-auth
 	url = https://github.com/OCA/server-auth.git
-	branch = 15.0
+	branch = 16.0
 [submodule "server-brand"]
 	path = server-brand
 	url = https://github.com/OCA/server-brand.git
-	branch = 15.0
+	branch = 16.0
 [submodule "multi-company"]
 	path = multi-company
 	url = https://github.com/OCA/multi-company.git
-	branch = 15.0
+	branch = 16.0
 [submodule "edi"]
 	path = edi
 	url = https://github.com/OCA/edi.git
-	branch = 15.0
+	branch = 16.0
 [submodule "payroll"]
 	path = payroll
 	url = https://github.com/OCA/payroll.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-financial-tools"]
 	path = account-financial-tools
 	url = https://github.com/OCA/account-financial-tools.git
-	branch = 15.0
+	branch = 16.0
 [submodule "bank-statement-import"]
 	path = bank-statement-import
 	url = https://github.com/OCA/bank-statement-import.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-fiscal-rule"]
 	path = account-fiscal-rule
 	url = https://github.com/OCA/account-fiscal-rule.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-invoicing"]
 	path = account-invoicing
 	url = https://github.com/OCA/account-invoicing.git
-	branch = 15.0
+	branch = 16.0
 [submodule "web-api"]
 	path = web-api
 	url = https://github.com/OCA/web-api.git
-	branch = 15.0
+	branch = 16.0
 [submodule "intrastat-extrastat"]
 	path = intrastat-extrastat
 	url = https://github.com/OCA/intrastat-extrastat.git
-	branch = 15.0
+	branch = 16.0
 [submodule "mis-builder"]
 	path = mis-builder
 	url = https://github.com/OCA/mis-builder.git
-	branch = 15.0
+	branch = 16.0
 [submodule "server-backend"]
 	path = server-backend
 	url = https://github.com/OCA/server-backend.git
-	branch = 15.0
+	branch = 16.0
 [submodule "maintenance"]
 	path = maintenance
 	url = https://github.com/OCA/maintenance.git
-	branch = 15.0
+	branch = 16.0
 [submodule "stock-logistics-workflow"]
 	path = stock-logistics-workflow
 	url = https://github.com/OCA/stock-logistics-workflow.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-reconcile"]
 	path = account-reconcile
 	url = https://github.com/OCA/account-reconcile.git
-	branch = 15.0
+	branch = 16.0
 [submodule "contract"]
 	path = contract
 	url = https://github.com/OCA/contract.git
-	branch = 15.0
+	branch = 16.0
 [submodule "knowledge"]
 	path = knowledge
 	url = https://github.com/OCA/knowledge.git
-	branch = 15.0
+	branch = 16.0
 [submodule "event"]
 	path = event
 	url = https://github.com/OCA/event.git
-	branch = 15.0
+	branch = 16.0
 [submodule "account-payment"]
 	path = account-payment
 	url = https://github.com/OCA/account-payment.git
-	branch = 15.0
+	branch = 16.0
 [submodule "odoo-formio"]
 	path = odoo-formio
 	url = https://github.com/novacode-nl/odoo-formio.git
-	branch = 15.0
+	branch = 16.0
 [submodule "commission"]
 	path = commission
 	url = https://github.com/OCA/commission.git
-	branch = 15.0
+	branch = 16.0
 [submodule "product-pack"]
 	path = product-pack
 	url = https://github.com/OCA/product-pack.git
-	branch = 15.0
+	branch = 16.0
 [submodule "product-variant"]
 	path = product-variant
 	url = https://github.com/OCA/product-variant.git
-	branch = 15.0
+	branch = 16.0
+[submodule "margin-analysis"]
+	path = margin-analysis
+	url = https://github.com/OCA/margin-analysis.git
+	branch = 16.0
+[submodule "fleet"]
+	path = fleet
+	url = https://github.com/OCA/fleet.git
+	branch = 16.0
