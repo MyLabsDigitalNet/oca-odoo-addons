@@ -206,3 +206,7 @@
 	path = fleet
 	url = https://github.com/OCA/fleet.git
 	branch = 16.0
+[submodule "timesheet"]
+	path = timesheet
+	url = https://github.com/OCA/timesheet.git
+	branch = 16.0
