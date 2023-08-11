@@ -198,3 +198,9 @@
 	path = product-variant
 	url = https://github.com/OCA/product-variant.git
 	branch = 15.0
+[submodule "fleet"]
+	path = fleet
+	url = git@github.com:OCA/fleet.git
+[submodule "margin-analysis"]
+	path = margin-analysis
+	url = git@github.com:OCA/margin-analysis.git
