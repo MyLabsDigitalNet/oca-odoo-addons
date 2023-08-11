@@ -204,3 +204,7 @@
 [submodule "margin-analysis"]
 	path = margin-analysis
 	url = git@github.com:OCA/margin-analysis.git
+[submodule "timesheet"]
+	path = timesheet
+	url = https://github.com/OCA/timesheet.git
+	branch = 15.0
