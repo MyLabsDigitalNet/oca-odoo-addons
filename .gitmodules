@@ -200,10 +200,10 @@
 	branch = 15.0
 [submodule "fleet"]
 	path = fleet
-	url = git@github.com:OCA/fleet.git
+	url = https://github.com/OCA/fleet.git
 [submodule "margin-analysis"]
 	path = margin-analysis
-	url = git@github.com:OCA/margin-analysis.git
+	url = https://github.com/OCA/margin-analysis.git
 [submodule "timesheet"]
 	path = timesheet
 	url = https://github.com/OCA/timesheet.git
