@@ -208,3 +208,7 @@
 	path = timesheet
 	url = https://github.com/OCA/timesheet.git
 	branch = 15.0
+[submodule "crm"]
+	path = crm
+	url = https://github.com/OCA/crm.git
+	branch = 15.0
