@@ -210,3 +210,7 @@
 	path = timesheet
 	url = https://github.com/OCA/timesheet.git
 	branch = 16.0
+[submodule "spreadsheet"]
+	path = spreadsheet
+	url = https://github.com/OCA/spreadsheet.git
+	branch = 16.0
