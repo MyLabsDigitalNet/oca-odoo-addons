@@ -214,3 +214,7 @@
 	path = spreadsheet
 	url = https://github.com/OCA/spreadsheet.git
 	branch = 16.0
+[submodule "crm"]
+	path = crm
+	url = https://github.com/OCA/crm.git
+	branch = 16.0
