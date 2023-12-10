@@ -218,3 +218,7 @@
 	path = crm
 	url = https://github.com/OCA/crm.git
 	branch = 16.0
+[submodule "website"]
+	path = website
+	url = https://github.com/OCA/website.git
+	branch = 16.0
