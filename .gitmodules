@@ -222,3 +222,7 @@
 	path = website
 	url = https://github.com/OCA/website.git
 	branch = 16.0
+[submodule "hr-attendance"]
+	path = hr-attendance
+	url = https://github.com/OCA/hr-attendance.git
+	branch = 16.0
