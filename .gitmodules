@@ -226,3 +226,7 @@
 	path = hr-attendance
 	url = https://github.com/OCA/hr-attendance.git
 	branch = 16.0
+[submodule "geospatial"]
+	path = geospatial
+	url = https://github.com/OCA/geospatial.git
+	branch = 16.0
