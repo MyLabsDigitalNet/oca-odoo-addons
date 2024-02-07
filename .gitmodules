@@ -238,3 +238,7 @@
 	path = wms
 	url = https://github.com/OCA/wms.git
 	branch = 16.0
+[submodule "website-cms"]
+	path = website-cms
+	url = https://github.com/OCA/website-cms.git
+	branch = 16.0
