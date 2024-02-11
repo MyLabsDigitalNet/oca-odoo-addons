@@ -242,3 +242,11 @@
 	path = website-cms
 	url = https://github.com/OCA/website-cms.git
 	branch = 16.0
+[submodule "hr-holidays"]
+	path = hr-holidays
+	url = https://github.com/OCA/hr-holidays.git
+	branch = 16.0
+[submodule "data-protection"]
+	path = data-protection
+	url = https://github.com/OCA/data-protection.git
+	branch = 16.0
