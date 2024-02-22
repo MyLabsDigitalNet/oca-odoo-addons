@@ -250,3 +250,7 @@
 	path = data-protection
 	url = https://github.com/OCA/data-protection.git
 	branch = 16.0
+[submodule "hr-expense"]
+	path = hr-expense
+	url = https://github.com/OCA/hr-expense.git
+	branch = 16.0
