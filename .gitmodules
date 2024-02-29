@@ -212,3 +212,11 @@
 	path = crm
 	url = https://github.com/OCA/crm.git
 	branch = 15.0
+[submodule "edi-framework"]
+	path = edi-framework
+	url = https://github.com/OCA/edi-framework.git
+	branch = 15.0
+[submodule "wms"]
+	path = wms
+	url = https://github.com/OCA/wms.git
+	branch = 15.0
