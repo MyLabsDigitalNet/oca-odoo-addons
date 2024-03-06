@@ -254,3 +254,7 @@
 	path = hr-expense
 	url = https://github.com/OCA/hr-expense.git
 	branch = 16.0
+[submodule "credit-control"]
+	path = credit-control
+	url = https://github.com/OCA/credit-control.git
+	branch = 16.0
