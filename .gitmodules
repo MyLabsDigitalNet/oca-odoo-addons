@@ -258,3 +258,7 @@
 	path = credit-control
 	url = https://github.com/OCA/credit-control.git
 	branch = 16.0
+[submodule "field-service"]
+	path = field-service
+	url = https://github.com/OCA/field-service.git
+	branch = 16.0
