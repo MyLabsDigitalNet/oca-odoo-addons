@@ -262,3 +262,7 @@
 	path = field-service
 	url = https://github.com/OCA/field-service.git
 	branch = 16.0
+[submodule "currency"]
+	path = currency
+	url = https://github.com/OCA/currency.git
+	branch = 16.0
