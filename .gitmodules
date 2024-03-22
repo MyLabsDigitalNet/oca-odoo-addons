@@ -220,3 +220,39 @@
 	path = wms
 	url = https://github.com/OCA/wms.git
 	branch = 15.0
+[submodule "credit-control"]
+	path = credit-control
+	url = https://github.com/OCA/credit-control.git
+	branch = 15.0
+[submodule "data-protection"]
+	path = data-protection
+	url = https://github.com/OCA/data-protection.git
+	branch = 15.0
+[submodule "field-service"]
+	path = field-service
+	url = https://github.com/OCA/field-service.git
+	branch = 15.0
+[submodule "geospatial"]
+	path = geospatial
+	url = https://github.com/OCA/geospatial.git
+	branch = 15.0
+[submodule "hr-attendance"]
+	path = hr-attendance
+	url = https://github.com/OCA/hr-attendance.git
+	branch = 15.0
+[submodule "hr-expense"]
+	path = hr-expense
+	url = https://github.com/OCA/hr-expense.git
+	branch = 15.0
+[submodule "hr-holidays"]
+	path = hr-holidays
+	url = https://github.com/OCA/hr-holidays.git
+	branch = 15.0
+[submodule "website"]
+	path = website
+	url = https://github.com/OCA/website.git
+	branch = 15.0
+[submodule "website-cms"]
+	path = website-cms
+	url = https://github.com/OCA/website-cms.git
+	branch = 15.0
