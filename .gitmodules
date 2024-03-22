@@ -256,3 +256,7 @@
 	path = website-cms
 	url = https://github.com/OCA/website-cms.git
 	branch = 15.0
+[submodule "currency"]
+	path = currency
+	url = https://github.com/OCA/currency.git
+	branch = 15.0
