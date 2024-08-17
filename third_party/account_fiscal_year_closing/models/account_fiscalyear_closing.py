@@ -553,13 +553,17 @@ class AccountFiscalyearClosingMapping(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
-            if vals.get("dest_account_id", False) and isinstance(vals["dest_account_id"], list):
+            if vals.get("dest_account_id", False) and isinstance(
+                vals["dest_account_id"], list
+            ):
                 vals["dest_account_id"] = vals["dest_account_id"][0]
         res = super(AccountFiscalyearClosingMapping, self).create(vals_list)
         return res
 
     def write(self, vals):
-        if vals.get("dest_account_id", False) and isinstance(vals["dest_account_id"], list):
+        if vals.get("dest_account_id", False) and isinstance(
+            vals["dest_account_id"], list
+        ):
             vals["dest_account_id"] = vals["dest_account_id"][0]
         res = super(AccountFiscalyearClosingMapping, self).write(vals)
         return res
@@ -604,6 +608,15 @@ class AccountFiscalyearClosingMapping(models.Model):
                     "date": date,
                     "partner_id": partner_id,
                 }
+                if (
+                    account.currency_id
+                    and account.currency_id != account.company_currency_id
+                ):
+                    amount_currency = sum(account_lines.mapped("amount_currency")) * -1
+                    move_line.update(
+                        currency_id=account.currency_id.id,
+                        amount_currency=amount_currency,
+                    )
             else:
                 balance = 0
         return balance, move_line

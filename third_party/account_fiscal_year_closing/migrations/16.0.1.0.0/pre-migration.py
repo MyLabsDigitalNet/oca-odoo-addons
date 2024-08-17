@@ -5,60 +5,57 @@
 from openupgradelib import openupgrade
 
 
-def update_account_type(env, model, new_type, old_type):
+def update_account_type(env, table):
     openupgrade.logged_query(
         env.cr,
-        """
-            UPDATE %(model)s
-            SET account_type = '%(new_type)s'
-            WHERE id in (
-                SELECT id
-                WHERE account_type_id = %(old_type)s
+        f"""
+            ALTER TABLE {table}
+            ADD COLUMN IF NOT EXISTS account_type VARCHAR
+        """,
+    )
+    openupgrade.logged_query(
+        env.cr,
+        f"""
+            WITH account_type_map AS (
+                SELECT
+                    res_id AS user_type_id,
+                    CASE
+                        WHEN name = 'data_account_type_receivable' THEN 'asset_receivable'
+                        WHEN name = 'data_account_type_liquidity' THEN 'asset_cash'
+                        WHEN name = 'data_account_type_current_assets' THEN 'asset_current'
+                        WHEN name = 'data_account_type_non_current_assets'
+                            THEN 'asset_non_current'
+                        WHEN name = 'data_account_type_fixed_assets' THEN 'asset_fixed'
+                        WHEN name = 'data_account_type_expenses' THEN 'expense'
+                        WHEN name = 'data_account_type_depreciation' THEN 'expense_depreciation'
+                        WHEN name = 'data_account_type_direct_costs' THEN 'expense_direct_cost'
+                        WHEN name = 'data_account_off_sheet' THEN 'off_balance'
+                        WHEN name = 'data_account_type_payable' THEN 'liability_payable'
+                        WHEN name = 'data_account_type_credit_card' THEN 'liability_credit_card'
+                        WHEN name = 'data_account_type_prepayments' THEN 'asset_prepayments'
+                        WHEN name = 'data_account_type_current_liabilities'
+                            THEN 'liability_current'
+                        WHEN name = 'data_account_type_non_current_liabilities'
+                            THEN 'liability_non_current'
+                        WHEN name = 'data_account_type_equity' THEN 'equity'
+                        WHEN name = 'data_unaffected_earnings' THEN 'equity_unaffected'
+                        WHEN name = 'data_account_type_revenue' THEN 'income'
+                        WHEN name = 'data_account_type_other_income' THEN 'income_other'
+                        ELSE ''
+                    END AS account_type
+                FROM ir_model_data
+                WHERE module = 'account' AND model = 'account.account.type'
             )
-        """
-        % {
-            "model": model,
-            "new_type": new_type,
-            "old_type": old_type,
-        },
+            UPDATE {table} aa
+            SET account_type = atm.account_type
+            FROM account_type_map atm
+            WHERE atm.user_type_id = aa.user_type_id
+        """,
     )
 
 
 @openupgrade.migrate()
 def migrate(env, version):
 
-    all_account_type = [
-        ("asset_receivable", env.ref("account.data_account_type_receivable").id),
-        ("asset_cash", env.ref("account.data_account_type_liquidity").id),
-        ("asset_current", env.ref("account.data_account_type_current_assets").id),
-        (
-            "asset_non_current",
-            env.ref("account.data_account_type_non_current_assets").id,
-        ),
-        ("asset_fixed", env.ref("account.data_account_type_fixed_assets").id),
-        ("expense", env.ref("account.data_account_type_expenses").id),
-        ("expense_depreciation", env.ref("account.data_account_type_depreciation").id),
-        ("expense_direct_cost", env.ref("account.data_account_type_direct_costs").id),
-        ("off_balance", env.ref("account.data_account_off_sheet").id),
-        ("liability_payable", env.ref("account.data_account_type_payable").id),
-        ("liability_credit_card", env.ref("account.data_account_type_credit_card").id),
-        ("asset_prepayments", env.ref("account.data_account_type_prepayments").id),
-        (
-            "liability_current",
-            env.ref("account.data_account_type_current_liabilities").id,
-        ),
-        (
-            "liability_non_current",
-            env.ref("account.data_account_type_non_current_liabilities").id,
-        ),
-        ("equity", env.ref("account.data_account_type_equity").id),
-        ("equity_unaffected", env.ref("account.data_unaffected_earnings").id),
-        ("income", env.ref("account.data_account_type_revenue").id),
-        ("income_other", env.ref("account.data_account_type_other_income").id),
-    ]
-
-    for new_type, old_type in all_account_type:
-        update_account_type(
-            env, "account_fiscalyear_closing_type_template", new_type, old_type
-        )
-        update_account_type(env, "account_fiscalyear_closing_type", new_type, old_type)
+    update_account_type(env, "account_fiscalyear_closing_type_template")
+    update_account_type(env, "account_fiscalyear_closing_type")
