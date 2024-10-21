@@ -278,3 +278,7 @@
 	path = design-themes
 	url = https://github.com/odoo/design-themes.git
 	branch = 16.0
+[submodule "automation"]
+	path = automation
+	url = https://github.com/OCA/automation.git
+	branch = 16.0
