@@ -282,3 +282,7 @@
 	path = automation
 	url = https://github.com/OCA/automation.git
 	branch = 16.0
+[submodule "interface-github"]
+	path = interface-github
+	url = https://github.com/OCA/interface-github.git
+	branch = 16.0
