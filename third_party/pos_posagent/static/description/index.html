@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>POS Agent PRO</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!-- Place favicon.ico in the root directory -->
+  <style>
+  body{
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .main_content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    border: 4px gray double;
+    background-color : #e9ecef;
+  }
+  
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  ul .checked {
+    background-image: url("img/bluecheckmark32.png");
+    background-repeat: no-repeat;
+    line-height: 35px;
+    padding-left: 40px;
+  }
+  
+  ul .unchecked {
+    background-image: url("img/blue_checkmark_unchecked32.png");
+    background-repeat: no-repeat;
+    line-height: 35px;
+    padding-left: 40px;
+  }
+  
+  ul {
+    margin: 50px;
+  }
+  
+  .link{
+    color : blue;
+  }
+  h2 {
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+</style>
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<div class="main_content">
+  <!-- Add your site or application content here -->
+  <h1>PosAgent PRO support for Odoo Community</h1>
+<h2>What is POSAgent</h2>
+<p>POSAgent is a standalone, Desktop (Microsoft Windows currently) application that allows direct receipt print with ESC/POS
+thermal printers and enables Cash Drawer support for Odoo Community Edition.</p>
+
+<p>This module allows you to use the POSAgent desktop client.
+</p>  
+<h2>Where can I get POSAgent</h2>
+<p>From it's GitHub page, currently we have Windows 10/11 x64 versions available for download, copy and paste the link below:</p>
+<p><span class="link">https://dieg0-a.github.io/posagent-home/</span><br><br><span>Try it for free!</span></p>
+
+<h2>What is Currently supported</h2>
+  <ul>
+    <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Windows 10/11</span></li>
+    <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Thermal ESC/POS Printers (Windows raw printer driver) mainly USB printers</span></li>
+    <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Any printer with a Windows driver via the system printer driver</span></li>
+    <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Cash Drawers (currently ESCPOS only with the raw driver)</span></li>
+</ul>
+
+<h2>What is currently NOT supported but will be supported soon</h2>
+
+<ul>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/blue_checkmark_unchecked32.png"><span style="vertical-align: middle; padding-left: 5px;">STAR Printers</span></li> 
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/blue_checkmark_unchecked32.png"><span style="vertical-align: middle; padding-left: 5px;">Linux version</span></li>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/blue_checkmark_unchecked32.png"><span style="vertical-align: middle; padding-left: 5px;">Older Windows Versions/32 bit</span></li>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/blue_checkmark_unchecked32.png"><span style="vertical-align: middle; padding-left: 5px;">Electronic Scales</span></li>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/blue_checkmark_unchecked32.png"><span style="vertical-align: middle; padding-left: 5px;">More printer drivers (Windows serial port, TCP/IP (network))</span></li>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/blue_checkmark_unchecked32.png"><span style="vertical-align: middle; padding-left: 5px;">Text mode (this would result in much better print quality), currently Odoo sends an image file to the proxy</span></li>
+</ul>
+
+  <h2>Is this program free?</h2>
+  
+  <span>Yes, if you find this module useful you can support us on the project page</span>
+
+  <h2>Features</h2>
+<ul>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Very fast and lightweight, made in native C++</span></li> 
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Very easy to set up, you only need to configure it once and it'll remember your settings and printer</span></li>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Silent, unintrusive, can run and start in the system tray</span></li>
+  <li style="line-height: 35px;"><img style="vertical-align: middle;" src="img/bluecheckmark32.png"><span style="vertical-align: middle; padding-left: 5px;">Now Open Source</span></li> 
+</ul>
+
+  <h2>Basic Usage for Windows</h2>
+
+  <p>Interface is pretty self explanatory, select a printer driver in the upper dropdown menu then adjust the settings below</p>
+  
+   <img style="width: 70%;" src="img/windows3.png">
+  
+  <h3>Setting up Odoo</h3>
+  
+  <h4>Example for Odoo 17</h4>
+
+  <p>Enable it in your POS Settings page, for example:</p>
+  <img style="width: 70%;" src="img/posagent.png">
+
+  <p>If everything went well then you should see the following icons in your POS interface:</p>
+  <img src="img/odoo_proxy_status.png">
+  <p>And that's all there is to the configuration process, you'll now be able to print directly to your ESC/POS printer and use the cash drawer.</p>
+</div>
+</body>
+
+</html>

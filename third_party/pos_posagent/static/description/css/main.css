@@ -1,0 +1,68 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body{
+  background-color: #f8f9fa;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main_content{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+  border: 4px gray double;
+  background-color : #e9ecef;
+}
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul .checked {
+  background-image: url("../img/bluecheckmark32.png");
+  background-repeat: no-repeat;
+  line-height: 35px;
+  padding-left: 40px;
+}
+
+ul .unchecked {
+  background-image: url("../img/blue_checkmark_unchecked32.png");
+  background-repeat: no-repeat;
+  line-height: 35px;
+  padding-left: 40px;
+}
+
+ul {
+  margin: 50px;
+}
+
+.link{
+  color : blue;
+}
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}

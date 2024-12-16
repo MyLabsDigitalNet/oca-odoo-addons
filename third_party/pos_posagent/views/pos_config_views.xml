@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pos_use_posagent_config_view_form" model="ir.ui.view">
+        <field name="name">pos.config.form</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='other_devices']" position="after">
+                <setting
+                 string="Use POSAgent"
+                 help="Enable using POSAgent proxy server for POS Hardware"
+                 title="Use POS Agent as proxy service to print directly
+                without the print dialog, additionally, it allows you to use a cash box. Note
+                that enabling this overrides the IoTBox settings.">
+                <field name="use_posagent"/>
+                <div class="content-group pos_posagent_config" invisible="not use_posagent">
+                    <div class="row">
+                        <label string="Proxy Port" for="pos_agent_port" class="col-lg-4 o_light_label"/>
+                        <field name="pos_agent_port"/>
+                    </div>
+                    <div class="row">
+                        <label string="Receipt Printer" for="posagent_enable_printer" class="col-lg-4 o_light_label"/>
+                        <field name="posagent_enable_printer"/>
+                    </div>
+                    <div class="row" invisible="not posagent_enable_printer">
+                        <label string="Cashdrawer" for="posagent_enable_cashdrawer" class="col-lg-4 o_light_label"/>
+                        <field name="posagent_enable_cashdrawer"/>
+                    </div>
+                </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
