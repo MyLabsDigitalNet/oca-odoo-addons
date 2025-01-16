@@ -6,7 +6,7 @@
 for dir in */ ; do
   cd "$dir"
   echo "Entering directory: $(pwd)"
-  git checkout 17.0
+  git checkout 18.0
   git pull
   cd ..
 done
