@@ -286,3 +286,7 @@
 	path = interface-github
 	url = https://github.com/OCA/interface-github.git
 	branch = 16.0
+[submodule "mylabs"]
+	path = mylabs
+	url = https://github.com/MyLabsDigitalNet/public-odoo-addons.git
+	branch = 16.0
