@@ -272,3 +272,7 @@
 	path = spreadsheet
 	url = https://github.com/OCA/spreadsheet.git
 	branch = 17.0
+[submodule "mylabs"]
+	path = mylabs
+	url = https://github.com/MyLabsDigitalNet/public-odoo-addons.git
+	branch = 16.0
