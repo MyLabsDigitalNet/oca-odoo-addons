@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    
+    <t t-name="PartnerDetailsEditWhatsApp" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('partner-details-right')]/div[hasclass('partner-detail')]" position="after">            
+             <!-- <div class="partner-detail">
+                 <span class="label">Whatsapp</span>
+                 <input class="detail-whatsapp" 
+                    name="whatsapp" 
+                    type="tel" 
+                    t-model="changes.whatsapp" 
+                    t-att-value="props.partner.whatsapp || ''"
+                    t-on-change="captureChange" />
+             </div> -->
+            <div class="partner-detail">
+                <span class="label">Whatsapp</span>
+                <input class="detail" name="whatsapp" type="tel" t-model="changes.whatsapp" t-on-change="captureChange" />
+            </div>
+             <!-- <div class="partner-detail">
+                <span class="label">Mobile</span>
+                <input class="detail" name="mobile" type="tel" t-model="changes.mobile" t-on-change="captureChange" />
+                <input class="detail" name="mobile" type="tel"
+                        t-on-change="captureChange"
+                         t-att-value="props.partner.whatsapp || ''"
+                        t-att-value="props.partner.mobile || ''" />
+             </div> -->
+        </xpath>
+        
+        <!-- <xpath expr="//div[hasclass('client-details-left')]" position="inside">
+            <div class="client-detail" t-if="env.pos.config.module_pos_loyalty">
+                <span class="label">Loyalty</span>
+                <input class="detail client-loyalty" name="loyalty_points"
+                       t-on-change="captureChange" t-att-value="props.partner.loyalty_points || ''"
+                       placeholder="0"
+                       t-att-readonly="isNotManager"/>
+            </div>
+        </xpath> -->
+    </t>
+
+</templates>

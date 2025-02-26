@@ -1,0 +1,41 @@
+<odoo>
+
+    <!-- <record id="sales_validation_status_send" model="base.automation">
+        <field name="name">Sales Confirm Notification by Whatsapp</field>
+        <field name="model_id" ref="sale.model_sale_order"/>
+        <field name="trigger">on_write</field>
+        <field name="active" eval="True"/>
+        <field name="filter_pre_domain">[["state","=","draft"]]</field>
+        <field name="filter_domain">[["state","=","sale"]]</field>
+        <field name="state">code</field>
+        <field name="code">
+record.send_whatsapp_automatic()
+        </field>
+    </record> -->
+
+    <record id="pos_sales_confirm_status" model="mail.template">
+        <field name="name">POS: Order</field>
+        <field name="subject">POS Order</field>
+        <field name="model_id" ref="point_of_sale.model_pos_order"/>
+        <field name="body_html"><![CDATA[<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;">
+        <p> Hello *${object.partner_id.name or ''}*,</p>
+        Your order ${object.name} amount *${format_amount(object.amount_total, object.currency_id)}*.
+        ]]>
+        </field>
+        <!-- <field name="report_template" ref="aos_whatsapp_pos.pos_invoice_report"/>
+        <field name="report_name">${(object.name or '').replace('/','_')}</field> -->
+    </record>
+    
+    <record id="pos_sales_confirm_multi" model="mail.template">
+        <field name="name">POS: Order Multi</field>
+        <field name="subject">POS Order Multi</field>
+        <field name="model_id" ref="point_of_sale.model_pos_order"/>
+        <field name="body_html"><![CDATA[<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;">
+        <p> Hello *_PARTNER_*,</p>
+        Your order _NUMBER_ amount _AMOUNT_TOTAL_.
+        ]]>
+        </field>
+    </record>
+    
+    
+</odoo>

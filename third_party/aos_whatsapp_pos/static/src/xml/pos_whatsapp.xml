@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ReceiptScreenWhatsApp" t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//form[@class='send-email']" position="after">
+            <form t-on-submit.prevent="onSendWhatsapp" class="send-email">  
+                <div class="input-email">
+                    <input type="number" placeholder="Whatsapp Receipt" t-model="orderUiState.inputWhatsapp" />
+                    <button class="send highlight" type="submit">
+						<i class="fa fa-whatsapp" aria-hidden="true"/>
+					</button>
+                </div>
+            </form>
+            <div>
+               <p style="margin: 7px;margin-left: 37px;font-size: 17px;font-style: italic;float: left;">Enter your message.</p></div>
+            <div>
+               <textarea class="wv_note" rows="2" cols="100" placeholder="Enter your message........" t-model="orderUiState.inputMessage" t-ref="input" name="note"></textarea>
+            </div>
+            <t t-if="orderUiState.whatsappSuccessful !== null">
+	             <div class="notice" t-attf-class="{{ orderUiState.whatsappSuccessful ? 'successful' : 'failed' }}">
+	                 <t t-esc="orderUiState.whatsappNotice"></t>
+	             </div>
+	         </t>
+        </xpath>
+    </t>
+    <t t-extend="PaymentScreenWidget">
+        <t t-jquery=".button.js_email" t-operation="before">
+            <div class='button js_whatsapp_select' t-if="widget.pos.config.module_account">
+                <i class='fa fa-whatsapp' /> <input type="radio" name="whatsapp_select" value='invoice' t-att-checked="widget.pos.config.default_option == 'invoice' ? 'checked' : undefined"/> Invoice <input type="radio" name="whatsapp_select" value="receipt" t-att-checked="widget.pos.config.default_option == 'receipt' ? 'checked' : undefined"/> Receipt
+            </div>
+        </t>
+    </t>
+</templates>

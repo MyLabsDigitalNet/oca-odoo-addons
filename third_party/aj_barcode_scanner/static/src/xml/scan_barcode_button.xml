@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+   <t t-name="ScanBarcodeButton" owl="1">
+      <div class="ticket-button" t-att-class="{ highlight: props.isTicketScreenShown }">        
+         <i class="fa fa-barcode" aria-hidden="true"></i>        
+         <!-- <div t-if="!env.isMobile"> Scan</div> -->
+      </div>
+   </t>
+
+   <t t-inherit="point_of_sale.Chrome" t-inherit-mode="extension">
+      <xpath expr="//TicketButton" position="before">
+         <ScanBarcodeButton isTicketScreenShown="isTicketScreenShown"/>
+      </xpath>
+
+      <xpath expr="//div[@class='pos']" position="inside">        
+         <audio id="audio" src="/aj_barcode_scanner/static/src/sounds/beep.mp3" autoplay="false"></audio>
+         <div id="root_scan_reader" class="scanner" style="width:0;display:block;">
+            <div id="scan_reader" class="scanner" style="width:100%;"> </div>
+            <div id="setting_scan_reader" class="scanner" style="width:100%;hight=50px"> </div>
+         </div> 
+      </xpath>
+
+   </t>
+</templates>
+

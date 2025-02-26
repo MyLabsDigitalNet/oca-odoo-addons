@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_pos_pos_wa_form" model="ir.ui.view">
+        <field name="name">pos.order.form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+        <field name="arch" type="xml">        
+        	<xpath expr="//button[@name='action_pos_order_invoice']" position="after">
+                <button 
+                    name="%(aos_whatsapp.action_whatsapp_compose_message_post)d"
+                    type="action"
+                    icon="fa-whatsapp"
+                    string="  Send By WhatsApp"
+                    class="btn-primary"
+                    title="Send By WhatsApp"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

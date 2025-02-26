@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- used from POS UI, no need to be in print menu -->
+    
+    <record id="pos_invoice_report" model="ir.actions.report">
+        <field name="name">Invoice</field>
+        <field name="model">pos.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">aos_whatsapp_pos.report_invoice</field>
+        <field name="print_report_name">'Invoice - %s' % (object.name)</field>
+    </record>
+
+    <template id="report_invoice" inherit_id="account.report_invoice" primary="True"/>
+
+</odoo>

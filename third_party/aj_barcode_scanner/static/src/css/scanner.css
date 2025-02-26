@@ -1,0 +1,31 @@
+.scanner {
+  /* height: 300px; */
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  /* pointer-events: none; */
+}
+
+#close_scan_reader{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.rotate_box{
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

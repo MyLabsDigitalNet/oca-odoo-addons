@@ -290,3 +290,7 @@
 	path = mylabs
 	url = https://github.com/MyLabsDigitalNet/public-odoo-addons.git
 	branch = 16.0
+[submodule "pos"]
+	path = pos
+	url = https://github.com/OCA/pos.git
+	branch = 16.0
