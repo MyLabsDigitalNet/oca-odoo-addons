@@ -260,3 +260,7 @@
 	path = currency
 	url = https://github.com/OCA/currency.git
 	branch = 15.0
+[submodule "mylabs"]
+	path = mylabs
+	url = https://github.com/MyLabsDigitalNet/public-odoo-addons.git
+	branch = 15.0
