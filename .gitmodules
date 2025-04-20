@@ -294,3 +294,7 @@
 	path = pos
 	url = https://github.com/OCA/pos.git
 	branch = 16.0
+[submodule "delivery-carrier"]
+	path = delivery-carrier
+	url = https://github.com/OCA/delivery-carrier.git
+	branch = 16.0
