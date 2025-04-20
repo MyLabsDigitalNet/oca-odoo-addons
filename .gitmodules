@@ -264,3 +264,7 @@
 	path = mylabs
 	url = https://github.com/MyLabsDigitalNet/public-odoo-addons.git
 	branch = 15.0
+[submodule "delivery-carrier"]
+	path = delivery-carrier
+	url = https://github.com/OCA/delivery-carrier.git
+	branch = 15.0
