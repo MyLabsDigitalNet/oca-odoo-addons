@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REST API App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .app-title {
+            border-bottom: 3px solid #0d6efd;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .screenshot {
+            border: 1px solid #dee2e6;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e9f3ff;
+            border-left: 5px solid #0d6efd;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #0d6efd;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="container py-5">
+
+    <h1 class="app-title">REST API App</h1>
+
+    <p class="lead">
+        <strong>App Summary:</strong> The REST API App enables robust and secure communication with the Odoo database through RESTful API calls. It is specifically designed for developers and system integrators who require a dynamic, configurable, and secure interface to access, manage, and manipulate Odoo models and data programmatically.
+    </p>
+
+    <h2 class="section-title">Key Features</h2>
+    <ul class="list-group mb-5">
+        <li class="list-group-item">Dynamically generate API endpoints for any Odoo model or database table</li>
+        <li class="list-group-item">Granular access control for specific users or user groups</li>
+        <li class="list-group-item">Field-level permissions with support for Read, Write, Create, and Delete operations</li>
+        <li class="list-group-item">Secure API keys and endpoint management to ensure data protection</li>
+        <li class="list-group-item">Real-time audit logging for tracking API requests and activities</li>
+    </ul>
+
+    <!-- READ API Section -->
+    <h2 class="section-title">1. READ API Features</h2>
+
+    <div class="highlight">
+        <p>Easily generate dynamic read-only API endpoints for any Odoo model. Select specific fields to be exposed via the "Allowed Fields" tab for fine-grained data control.</p>
+    </div>
+    <img src="assets/screenshots/1.png" class="screenshot img-fluid rounded" alt="Allowed Fields">
+
+    <div class="highlight">
+        <p>Enable flexible filtering by dynamically allowing specific filter fields (e.g., ID, Name, etc.) through the "User Filters" tab.</p>
+    </div>
+    <img src="assets/screenshots/2.png" class="screenshot img-fluid rounded" alt="User Filters">
+
+    <div class="highlight">
+        <p>Predefine static filters using the "Default Filters" tab to ensure APIs return only relevant data subsets.</p>
+    </div>
+    <img src="assets/screenshots/3.png" class="screenshot img-fluid rounded" alt="Default Filters">
+
+    <div class="highlight">
+        <p>Control data ordering dynamically with the "Order By" tab to sort results by selected fields and directions.</p>
+    </div>
+    <img src="assets/screenshots/4.png" class="screenshot img-fluid rounded" alt="Order By">
+
+    <div class="highlight">
+        <p>Restrict endpoint access to specific users using the "User List" tab to enforce security policies.</p>
+    </div>
+    <img src="assets/screenshots/5.png" class="screenshot img-fluid rounded" alt="User List">
+
+    <div class="highlight">
+        <p>A real-time example of the generated JSON request (e.g., Postman/Curl) is shown at the bottom of the form for quick testing and integration.</p>
+    </div>
+    <img src="assets/screenshots/6.png" class="screenshot img-fluid rounded" alt="Curl Example">
+
+    <!-- WRITE API Section -->
+    <h2 class="section-title">2. WRITE API Features</h2>
+    <div class="highlight">
+        <p>Allow updates to selected fields only via the "Allowed Fields" tab, ensuring controlled data manipulation through the API. Assign authorized users in the "User List" tab to manage access control for update operations. Real-time generated JSON examples help developers test and integrate the API quickly using tools like Postman or Curl.</p>
+    </div>
+    <img src="assets/screenshots/7.png" class="screenshot img-fluid rounded" alt="Write API">
+
+    <!-- CREATE API Section -->
+    <h2 class="section-title">3. CREATE API Features</h2>
+    <div class="highlight">
+        <p>Define which fields can be accepted for creation operations using the "Allowed Fields" tab, keeping insertions secure and structured. Restrict create access to authorized users via the "User List" tab. Sample JSON request is auto-generated to assist in seamless integration testing.</p>
+    </div>
+    <img src="assets/screenshots/8.png" class="screenshot img-fluid rounded" alt="Create API">
+
+    <!-- UNLINK API Section -->
+    <h2 class="section-title">4. UNLINK (DELETE) API Features</h2>
+    <div class="highlight">
+        <p>Provide deletion permissions only to specific users using the "User List" tab to ensure critical data is not removed without authorization. A sample deletion request is shown for quick reference.</p>
+    </div>
+    <img src="assets/screenshots/9.png" class="screenshot img-fluid rounded" alt="Unlink API">
+
+    <!-- Audit Report -->
+    <h2 class="section-title">5. API Audit Report</h2>
+    <div class="highlight">
+        <p>Monitor and trace all API interactions in real-time. Each API call is logged in the system with metadata for auditing, diagnostics, and security review.</p>
+    </div>
+    <img src="assets/screenshots/10.png" class="screenshot img-fluid rounded" alt="Audit Log">
+
+    <!-- Closing Remarks -->
+    <h2 class="section-title">Closing Remarks</h2>
+    <div class="highlight">
+        <p>The REST API App is a comprehensive, developer-focused solution for secure and flexible interaction with Odoo data. Whether you are integrating external systems, building mobile applications, or automating backend tasks, this module offers all the essential features to create a stable, audit-compliant, and powerful RESTful environment within Odoo.</p>
+    </div>
+
+    <!-- Bootstrap JS (Optional if you later add interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="api_app_unlink_form" model="ir.ui.view">
+        <field name="name">api.app.unlink.view.form</field>
+        <field name="model">api.app.unlink</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="model_alias"/>
+                        </group>
+                        <group>
+                            <field name="model_name"/>
+                            <field name="api_expiry_date"/>
+                        </group>
+
+                    </group>
+
+                    <notebook>
+                        <page string="User List">
+                            <field name="allowed_user_list"/>
+                        </page>
+                    </notebook>
+                    <group>
+                        .
+                        <br/>
+                        .
+                        <br/>
+                        <h5>How to use it:</h5>
+                    </group>
+
+                    <group>
+                        <group colspan="4">
+                            <field name="final_url" nolabel="1"/>
+                        </group>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="api_app_unlink_list" model="ir.ui.view">
+        <field name="name">api.app.unlink.view.list</field>
+        <field name="model">api.app.unlink</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state=='In-Active' or is_api_active == False">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="model_name"/>
+                <field name="model_alias"/>
+                <field name="api_expiry_date"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+
+    <record id="api_app_unlink_action" model="ir.actions.act_window">
+        <field name="name">Unlink API</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">api.app.unlink</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                unlink!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="api_app_unlink"
+              name="Unlink API"
+              parent="api_app_root"
+              action="api_app_unlink_action"
+              sequence="14"/>
+
+
+</odoo>

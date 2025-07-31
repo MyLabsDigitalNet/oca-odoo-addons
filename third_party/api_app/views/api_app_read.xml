@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="api_app_read_form" model="ir.ui.view">
+        <field name="name">api.app.read.view.form</field>
+        <field name="model">api.app.read</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="model_alias"/>
+                            <field name="default_limit"/>
+                        </group>
+                        <group>
+                            <field name="model_name"/>
+                            <field name="api_expiry_date"/>
+                            <field name="default_offset"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Allow Fields">
+                            <field name="allow_field_ids">
+                                <list string="Allow Fields" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="field_name" domain="[('model_id', '=', model_name)]"
+                                           required="True"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="User Filters">
+                            <field name="user_filter_ids">
+                                <list string="User Filters" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="field_alias" required="True"/>
+                                    <field name="field_name" domain="[('model_id', '=', model_name)]"
+                                           required="True"/>
+                                    <field name="comparison_operator" required="True"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Default Filters">
+                            <field name="default_filter_ids">
+                                <list string="Default Filters" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="field_name" domain="[('model_id', '=', model_name)]"
+                                           required="True"/>
+                                    <field name="comparison_operator" required="True"/>
+                                    <field name="field_value"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Order By">
+                            <field name="orderby_ids">
+                                <list string="Order By" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="field_name" domain="[('model_id', '=', model_name)]"
+                                           required="True"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="User List">
+                            <field name="allowed_user_list"/>
+                        </page>
+                    </notebook>
+                    <group>
+                        <br/>
+                        .
+                        <br/>
+                        <h5>How to use it:</h5>
+                    </group>
+
+                    <group>
+                        <group colspan="4">
+                            <field name="final_url" nolabel="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="api_app_read_list" model="ir.ui.view">
+        <field name="name">api.app.read.view.list</field>
+        <field name="model">api.app.read</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state=='In-Active' or is_api_active == False">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="model_name"/>
+                <field name="model_alias"/>
+                <field name="api_expiry_date"/>
+                <field name="default_limit"/>
+                <field name="default_offset"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="api_app_read_action" model="ir.actions.act_window">
+        <field name="name">Read API</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">api.app.read</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create API!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="api_app_root"
+              name="API APP"
+              sequence="10"
+              web_icon="api_app,static/description/icon.png"/>
+
+    <menuitem id="api_app_read"
+              name="Read API"
+              parent="api_app_root"
+              action="api_app_read_action"
+              sequence="10"/>
+
+</odoo>

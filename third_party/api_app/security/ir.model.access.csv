@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+api_app_call_log_admin,api_app_call_log_admin,model_api_app_call_log,,1,0,0,0
+api_app_read_admin,api_app_read_admin,model_api_app_read,,1,1,1,1
+api_app_read_user_filter_admin,api_app_read_user_filter_admin,model_api_app_read_user_filter,,1,1,1,1
+api_app_read_default_filter_admin,api_app_read_default_filter_admin,model_api_app_read_default_filter,,1,1,1,1
+api_app_read_allow_field_admin,api_app_read_allow_field_admin,model_api_app_read_allow_field,,1,1,1,1
+api_app_read_orderby_admin,api_app_read_orderby_admin,model_api_app_read_orderby,,1,1,1,1
+
+api_app_write_admin,api_app_write_admin,model_api_app_write,,1,1,1,1
+api_app_create_admin,api_app_create_admin,model_api_app_create,,1,1,1,1
+api_app_unlink_admin,api_app_unlink_admin,model_api_app_unlink,,1,1,1,1
+
