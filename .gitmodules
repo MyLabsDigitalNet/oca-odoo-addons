@@ -182,10 +182,6 @@
 	path = account-payment
 	url = https://github.com/OCA/account-payment.git
 	branch = 16.0
-[submodule "odoo-formio"]
-	path = odoo-formio
-	url = https://github.com/novacode-nl/odoo-formio.git
-	branch = 16.0
 [submodule "commission"]
 	path = commission
 	url = https://github.com/OCA/commission.git
