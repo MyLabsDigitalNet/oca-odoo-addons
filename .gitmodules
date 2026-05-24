@@ -298,3 +298,7 @@
 	path = rest-framework
 	url = https://github.com/OCA/rest-framework.git
 	branch = 16.0
+[submodule "mis-builder-contrib"]
+	path = mis-builder-contrib
+	url = https://github.com/OCA/mis-builder-contrib.git
+	branch = 16.0
